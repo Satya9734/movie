@@ -582,7 +582,7 @@ border-radius: 50%;
   position: relative;
   white-space: nowrap;
   will-change: transform;
-  animation: moveText 10s linear infinite;
+  animation: moveText 20s linear infinite;
   color: aliceblue;
   font-size: 20px;
 
