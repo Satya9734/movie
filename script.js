@@ -110,15 +110,23 @@
 
 // about
 
+
 document.addEventListener('scroll', function() {
   const slideInElements = document.querySelectorAll('.slide-in');
   const scrollPosition = window.scrollY + window.innerHeight;
 
   slideInElements.forEach(element => {
       const slideInPosition = element.offsetTop;
+      const slideOutPosition = element.offsetTop + element.clientHeight;
 
       if (scrollPosition > slideInPosition) {
-          element.style.left = '0';
+          element.style.left = '0'; 
+      } else {
+          element.style.left = '-100%'; 
+      }
+      
+      if (window.scrollY > slideOutPosition) {
+          element.style.left = '-100%'; 
       }
   });
 });
