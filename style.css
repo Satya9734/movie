@@ -568,8 +568,10 @@ border-radius: 50%;
   font-size: 20px;
 
 }
-.img{
-
+.moving-text {
+  
+  animation: moveText 10s linear infinite;
+ 
 }
 
 }
